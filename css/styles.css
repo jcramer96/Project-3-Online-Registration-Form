@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    font-size: 1em;
+}
+
+h1 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+    background-color: #323b4a;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 5px 0 10px;
+}
+
+h2,
+legend {
+    color: #323b4a;
+}
+
+#description {
+    text-align: center;
+    color: gray;
+    padding: 0 0 30px;
+}
+
+section {
+    border-bottom: 4px solid #323b4a;
+    width: 90%;
+    margin: auto;
+}
+
+@media screen and (min-width:768px) {
+    
+}

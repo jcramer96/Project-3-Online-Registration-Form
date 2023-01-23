@@ -52,6 +52,53 @@ fieldset {
     border: none;
     width: 90%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+legend {
+    padding: 20px 0;
+}
+
+label[for="name"],
+label[for="email"],
+label[for="phone"],
+label[for="address"],
+label[for="city"],
+label[for="state"],
+label[for="zip"] {
+    padding: 10px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select {
+    height: 3rem;
+    border: 1px solid #f2f2f2;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+#zip {
+    margin-bottom: 30px;
+    width: 50%;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+
+input[placeholder="Required"] {
+    font-style: italic;
+    text-align: right;
+    padding-right: 20px;
 }
 
 @media screen and (min-width:768px) {

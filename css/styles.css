@@ -93,12 +93,64 @@ select:focus {
     outline: none;
     border: 2px solid darkblue;
     border-radius: 5px;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-input[placeholder="Required"] {
+[placeholder="Required"] {
     font-style: italic;
     text-align: right;
     padding-right: 20px;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+input[type=checkbox],
+input[type="radio"] {
+    margin: 0 10px 20px;
+}
+
+input[type="checkbox"]:last-child,
+input[type="radio"] {
+    margin-bottom: 30px;
+}
+
+.btn-header {
+    padding-left: 5px;
+    margin-bottom: 20px;
+}
+
+label[for="other"] {
+    padding: 0 0 10px 5px;
+}
+
+textarea {
+    height: 100px;
+    border: 1px solid #f2f2f2;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+input[type="submit"] {
+    height: 50px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #2aa39f;
+    border: 1px solid #2aa39f;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+#copyright {
+    text-align: center;
+    font-style: italic;
+    color: gray;
+    margin-bottom: 300px;
 }
 
 @media screen and (min-width:768px) {

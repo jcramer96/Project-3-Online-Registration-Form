@@ -36,6 +36,8 @@ legend {
 }
 
 section {
+    display: flex;
+    flex-direction: column;
     border-bottom: 4px solid #323b4a;
     width: 90%;
     margin: auto;
@@ -79,7 +81,15 @@ select {
     border: 1px solid #f2f2f2;
     background-color: #f2f2f2;
     border-radius: 5px;
-    margin-bottom: 5px;
+    margin: 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+select {
+    padding-top: 12px;
+    padding-left: 5px;
 }
 
 #zip {
@@ -102,6 +112,10 @@ select:focus {
     font-style: italic;
     text-align: right;
     padding-right: 20px;
+}
+
+[placeholder] {
+    padding-left: 10px;
 }
 
 input:focus::placeholder {
@@ -133,6 +147,7 @@ textarea {
     background-color: #f2f2f2;
     border-radius: 5px;
     margin-bottom: 30px;
+    padding-top: 10px;
 }
 
 input[type="submit"] {
@@ -154,5 +169,64 @@ input[type="submit"] {
 }
 
 @media screen and (min-width:768px) {
-    
+    section,
+    hr,
+    form {
+        max-width: 768px;
+        margin: auto;
+    }
+
+    section {
+        padding: 30px 0;
+    }
+
+    hr {
+        margin-top: 3px;
+    }
+
+    fieldset,
+    hr {
+        width: 100%;
+    }
+
+    legend {
+        padding: 60px 0 20px;
+    }
+
+    .input-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 20px;
+    }
+
+    .zip-container {
+        margin: 20px 0 60px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    #zip {
+        width: 25%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        width: 75%;
+        margin: 0;
+    }
+
+    label[for="name"],
+    label[for="email"],
+    label[for="phone"],
+    label[for="address"],
+    label[for="city"],
+    label[for="state"],
+    label[for="zip"] {
+        min-width: 20%;
+}
 }

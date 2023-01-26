@@ -41,6 +41,7 @@ section {
     border-bottom: 4px solid #323b4a;
     width: 90%;
     margin: auto;
+    background-color: #CDCACC;
 }
 
 hr {
@@ -69,7 +70,9 @@ label[for="address"],
 label[for="city"],
 label[for="state"],
 label[for="zip"] {
-    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 20px;
 }
 
 input[type="text"],
@@ -106,6 +109,7 @@ select:focus {
     text-align: left;
     padding-left: 10px;
     padding-right: 10px;
+    transition: border .5s ;
 }
 
 [placeholder="Required"] {
@@ -178,6 +182,7 @@ input[type="submit"] {
 
     section {
         padding: 30px 0;
+        width: 100%;
     }
 
     hr {
@@ -201,6 +206,10 @@ input[type="submit"] {
         row-gap: 20px;
     }
 
+    label[for="zip"] {
+        padding-right: 125px;
+    }
+
     .zip-container {
         margin: 20px 0 60px;
         display: flex;
@@ -210,6 +219,7 @@ input[type="submit"] {
 
     #zip {
         width: 25%;
+        margin: 0;
     }
 
     input[type="text"],
